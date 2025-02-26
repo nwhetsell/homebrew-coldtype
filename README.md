@@ -1,18 +1,15 @@
-# Nwhetsell Coldtype
+# homebrew-coldtype
 
-## How do I install these formulae?
+This is a [Homebrew](https://brew.sh) tap for installing [Coldtype](https://coldtype.goodhertz.com).
 
-`brew install nwhetsell/coldtype/<formula>`
+To install the Coldtype, run:
 
-Or `brew tap nwhetsell/coldtype` and then `brew install <formula>`.
-
-Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
-
-```ruby
-tap "nwhetsell/coldtype"
-brew "<formula>"
+```sh
+brew install nwhetsell/coldtype/coldtype
 ```
 
-## Documentation
+You should now be able to run Coldtype:
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```sh
+coldtype --help
+```
