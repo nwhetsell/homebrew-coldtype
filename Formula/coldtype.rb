@@ -7,6 +7,13 @@ class Coldtype < Formula
   sha256 "1f0c0ff3fdb4fa1e31f2f85252dbba20dda1b841a644574fcb455d13a3249092"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/nwhetsell/homebrew-coldtype/releases/download/coldtype-0.11.4"
+    sha256 cellar: :any, arm64_sequoia: "467cbbf13fe8329c527fd664b035adad736d12289c55154118e6b7fbe944dc99"
+    sha256 cellar: :any, arm64_sonoma:  "5518b95c63df4e1bd14bc90e44e0d5af62cd80b9664f6a37255440be649698ef"
+    sha256 cellar: :any, ventura:       "5218ff9efbca0abdb8db22ec7b6cb45bf1e1075f3986034de719e44f081758b4"
+  end
+
   depends_on "ffmpeg"
   depends_on "libsndfile"
   depends_on "numpy"
