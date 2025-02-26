@@ -8,6 +8,7 @@ class Coldtype < Formula
   license "Apache-2.0"
 
   depends_on "numpy"
+  depends_on "portaudio"
   depends_on "python-setuptools"
   depends_on "python@3.12"
   depends_on "six"
