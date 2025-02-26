@@ -2,7 +2,7 @@
 
 This is a [Homebrew](https://brew.sh) tap for installing [Coldtype](https://coldtype.goodhertz.com).
 
-To install the Coldtype, run:
+To install Coldtype, run:
 
 ```sh
 brew install nwhetsell/coldtype/coldtype
