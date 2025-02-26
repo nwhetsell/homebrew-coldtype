@@ -7,6 +7,7 @@ class Coldtype < Formula
   sha256 "1f0c0ff3fdb4fa1e31f2f85252dbba20dda1b841a644574fcb455d13a3249092"
   license "Apache-2.0"
 
+  depends_on "ffmpeg"
   depends_on "libsndfile"
   depends_on "numpy"
   depends_on "portaudio"
