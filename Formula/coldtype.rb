@@ -6,6 +6,7 @@ class Coldtype < Formula
   url "https://files.pythonhosted.org/packages/41/65/d1645058ba38d1002e13ca7f269881842058b64993247b18fc34576f9886/coldtype-0.11.4.tar.gz"
   sha256 "1f0c0ff3fdb4fa1e31f2f85252dbba20dda1b841a644574fcb455d13a3249092"
   license "Apache-2.0"
+  revision 1
 
   bottle do
     root_url "https://github.com/nwhetsell/homebrew-coldtype/releases/download/coldtype-0.11.4"
@@ -14,17 +15,52 @@ class Coldtype < Formula
     sha256 cellar: :any, ventura:       "5218ff9efbca0abdb8db22ec7b6cb45bf1e1075f3986034de719e44f081758b4"
   end
 
+  depends_on "certifi"
   depends_on "ffmpeg"
   depends_on "libsndfile"
   depends_on "numpy"
   depends_on "portaudio"
+  depends_on "python-packaging"
   depends_on "python-setuptools"
   depends_on "python@3.12"
   depends_on "six"
 
+  uses_from_macos "libxml2"
+  uses_from_macos "libxslt"
+
+  resource "appdirs" do
+    url "https://files.pythonhosted.org/packages/d7/d8/05696357e0311f5b5c316d7b95f46c669dd9c15aaeecbb48c7d0aeb88c40/appdirs-1.4.4.tar.gz"
+    sha256 "7d5d0167b2b1ba821647616af46a749d1c653740dd0d2415100fe26e27afdf41"
+  end
+
+  resource "b3denv" do
+    url "https://files.pythonhosted.org/packages/26/a3/0964f4454cc296ef81ebfc7819e0c54ca558dd08730b8218b37f51a2a717/b3denv-0.0.19.tar.gz"
+    sha256 "2c789d57e76d32b5d5eab0f65507e2edb55bbd3daad6126c18103a220109d4d1"
+  end
+
+  resource "blackrenderer" do
+    url "https://files.pythonhosted.org/packages/c5/48/d011ddc69f332b36cb3364985f77bcec942150c7bb82212c8a2d1fa67d09/blackrenderer-0.6.0.tar.gz"
+    sha256 "639e30d2ddd080e90780e45130ac202c5f4f5180db5d6c48f61a222d58560952"
+  end
+
+  resource "booleanoperations" do
+    url "https://files.pythonhosted.org/packages/57/d9/9eae7bc4ba3a38ab7426522fb08e12df54aec27595d7bcd1bc0670aec873/booleanOperations-0.9.0.zip"
+    sha256 "8cfa821c32ad374fa120d6b2e0b444ebeac57c91e6631528645fa19ac2a281b8"
+  end
+
+  resource "brotli" do
+    url "https://files.pythonhosted.org/packages/2f/c2/f9e977608bdf958650638c3f1e28f85a1b075f075ebbe77db8555463787b/Brotli-1.1.0.tar.gz"
+    sha256 "81de08ac11bcb85841e440c13611c00b67d3bf82698314928d0b676362546724"
+  end
+
   resource "cffi" do
     url "https://files.pythonhosted.org/packages/fc/97/c783634659c2920c3fc70419e3af40972dbaf758daa229a7d6ea6135c90d/cffi-1.17.1.tar.gz"
     sha256 "1c39c6016c32bc48dd54561950ebd6836e1670f2ae46128f67cf49e789c52824"
+  end
+
+  resource "charset-normalizer" do
+    url "https://files.pythonhosted.org/packages/16/b0/572805e227f01586461c80e0fd25d65a2115599cc9dad142fee4b747c357/charset_normalizer-3.4.1.tar.gz"
+    sha256 "44251f18cd68a75b56585dd00dae26183e102cd5e0f9f1466e6df5da2ed64ea3"
   end
 
   resource "coldtype-fontgoggles" do
@@ -40,6 +76,11 @@ class Coldtype < Formula
   resource "easing-functions" do
     url "https://files.pythonhosted.org/packages/5c/ab/84e42f16746e70dae34d5c03eaae44ebf8fef8f84ab31ea484295779e32c/easing_functions-1.0.4.tar.gz"
     sha256 "e18c7931d445b85f28c4d15ad0a9a47bb65d4e2eefc0db3840448fae25e3f9de"
+  end
+
+  resource "fontmath" do
+    url "https://files.pythonhosted.org/packages/0d/ee/c23438eb01ee4b43beb79c148088589661a3eb1c6549ec82baebea059c99/fontmath-0.9.4.zip"
+    sha256 "1fd9190c9d784e1305c3c49771b91d910f246a4b7c44ede219c99a07ed7aeda4"
   end
 
   resource "fontpens" do
@@ -62,6 +103,16 @@ class Coldtype < Formula
     sha256 "90e90d328b0b26fed6e1631d21801e2d8a7a0c5dcb480e733c177567ec9666f0"
   end
 
+  resource "idna" do
+    url "https://files.pythonhosted.org/packages/f1/70/7703c29685631f5a7590aa73f1f1d3fa9a380e654b86af429e0934a32f7d/idna-3.10.tar.gz"
+    sha256 "12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9"
+  end
+
+  resource "lxml" do
+    url "https://files.pythonhosted.org/packages/ef/f6/c15ca8e5646e937c148e147244817672cf920b56ac0bf2cc1512ae674be8/lxml-5.3.1.tar.gz"
+    sha256 "106b7b5d2977b339f1e97efe2778e2ab20e99994cbb0ec5e55771ed0795920c8"
+  end
+
   resource "mido" do
     url "https://files.pythonhosted.org/packages/9e/a4/f9bfc7016c9fb1e348078a3455ab0d1573bcb5154dc7fc1aba9fcfe38b95/mido-1.3.2.tar.gz"
     sha256 "3aea28b6ed730f737d5b12da3578debe9dc50058fa370fe9ceded9189b67c348"
@@ -80,6 +131,16 @@ class Coldtype < Formula
   resource "pyaudio" do
     url "https://files.pythonhosted.org/packages/26/1d/8878c7752febb0f6716a7e1a52cb92ac98871c5aa522cba181878091607c/PyAudio-0.2.14.tar.gz"
     sha256 "78dfff3879b4994d1f4fc6485646a57755c6ee3c19647a491f790a0895bd2f87"
+  end
+
+  resource "pybind11" do
+    url "https://files.pythonhosted.org/packages/d2/c1/72b9622fcb32ff98b054f724e213c7f70d6898baa714f4516288456ceaba/pybind11-2.13.6.tar.gz"
+    sha256 "ba6af10348c12b24e92fa086b39cfba0eff619b61ac77c406167d813b096d39a"
+  end
+
+  resource "pyclipper" do
+    url "https://files.pythonhosted.org/packages/4a/b2/550fe500e49c464d73fabcb8cb04d47e4885d6ca4cfc1f5b0a125a95b19a/pyclipper-1.3.0.post6.tar.gz"
+    sha256 "42bff0102fa7a7f2abdd795a2594654d62b786d0c6cd67b72d469114fdeb608c"
   end
 
   resource "pycparser" do
@@ -127,6 +188,21 @@ class Coldtype < Formula
     sha256 "05488d6592b59cd78b61ec37d38725416b2df62efafa6a0d63a631b27aa474fc"
   end
 
+  resource "urllib3" do
+    url "https://files.pythonhosted.org/packages/aa/63/e53da845320b757bf29ef6a9062f5c669fe997973f966045cb019c3f4b66/urllib3-2.3.0.tar.gz"
+    sha256 "f8c5449b3cf0861679ce7e0503c7b44b5ec981bec0d1d3795a07f1ba96f0204d"
+  end
+
+  resource "xattr" do
+    url "https://files.pythonhosted.org/packages/62/bf/8b98081f9f8fd56d67b9478ff1e0f8c337cde08bcb92f0d592f0a7958983/xattr-1.1.4.tar.gz"
+    sha256 "b7b02ecb2270da5b7e7deaeea8f8b528c17368401c2b9d5f63e91f545b45d372"
+  end
+
+  resource "zopfli" do
+    url "https://files.pythonhosted.org/packages/5e/7c/a8f6696e694709e2abcbccd27d05ef761e9b6efae217e11d977471555b62/zopfli-0.2.3.post1.tar.gz"
+    sha256 "96484dc0f48be1c5d7ae9f38ed1ce41e3675fd506b27c11a6607f14b49101e99"
+  end
+
   def python3
     which("python3.12")
   end
@@ -134,13 +210,13 @@ class Coldtype < Formula
   def install
     venv = virtualenv_install_with_resources
 
-    system python3, "-m", "pip", "--python=#{venv.root}/bin/python", "install",
-                                *(std_pip_args - ["--no-binary=:all:"]),
-                                "skia-python"
+    args = std_pip_args(build_isolation: true) - ["--no-binary=:all:"]
+    ["cffsubr", "skia-python"].each do |name|
+      system python3, "-m", "pip", "--python=#{venv.root}/bin/python", "install", *args, name
+    end
 
-    python_version = Language::Python.major_minor_version(python3)
     (prefix/Language::Python.site_packages(python3)/"homebrew-coldtype.pth").write <<~EOS
-      import site; site.addsitedir('#{libexec}/lib/python#{python_version}/site-packages')
+      import site; site.addsitedir('#{venv.site_packages}')
     EOS
   end
 
