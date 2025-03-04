@@ -6,7 +6,7 @@ class Coldtype < Formula
   url "https://files.pythonhosted.org/packages/41/65/d1645058ba38d1002e13ca7f269881842058b64993247b18fc34576f9886/coldtype-0.11.4.tar.gz"
   sha256 "1f0c0ff3fdb4fa1e31f2f85252dbba20dda1b841a644574fcb455d13a3249092"
   license "Apache-2.0"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/nwhetsell/homebrew-coldtype/releases/download/coldtype-0.11.4_1"
@@ -18,6 +18,7 @@ class Coldtype < Formula
   depends_on "certifi"
   depends_on "cffi"
   depends_on "ffmpeg"
+  depends_on "glfw"
   depends_on "libsndfile"
   depends_on "numpy"
   depends_on "portaudio"
@@ -217,7 +218,11 @@ class Coldtype < Formula
   end
 
   test do
-    system bin/"coldtype", "--save-renders", "--render-and-release", "--output-folder", testpath/"renders", "demo"
+    system bin/"coldtype", "--save-renders",
+                           "--render-and-release",
+                           "--output-folder", testpath/"renders",
+                           "--no-viewer", "True",
+                           "demo"
     assert_path_exists testpath/"demo.mp4"
 
     system python3, "-c", "import coldtype"
