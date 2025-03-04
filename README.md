@@ -11,5 +11,5 @@ brew install nwhetsell/coldtype/coldtype
 You should now be able to run Coldtype:
 
 ```sh
-coldtype --help
+coldtype demo
 ```
