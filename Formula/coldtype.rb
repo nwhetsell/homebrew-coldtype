@@ -8,10 +8,10 @@ class Coldtype < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/nwhetsell/homebrew-coldtype/releases/download/coldtype-0.12.2"
-    sha256 cellar: :any, arm64_sequoia: "543e7c2c7f8230469d88ce202a1946e722f58ea2f636b155e0638d42d7758f2b"
-    sha256 cellar: :any, arm64_sonoma:  "415842e43f4ed2e31ee2a2f023105e063200ccc5a0b22ed95d19c25fda4a79ed"
-    sha256 cellar: :any, ventura:       "765056cbd73c2e0494bfec8b4b1ddf5c5e461c505e94036f992e59756d2c7a82"
+    root_url "https://github.com/nwhetsell/homebrew-coldtype/releases/download/coldtype-0.13.3"
+    sha256 cellar: :any, arm64_tahoe:   "bf85d8f326f2dd3685b209833732326ef1d918b455e92d6cd104101db93a85ed"
+    sha256 cellar: :any, arm64_sequoia: "50cb1d49694d3ebd28400218b7cfe17e88634b58fd90c1b5c8a3ac386b39eb02"
+    sha256 cellar: :any, arm64_sonoma:  "9939cd8733f4fc1f01a5c3571063fb854970cd1016ce6fc26adc610b7ab3c9f2"
   end
 
   depends_on "certifi"
