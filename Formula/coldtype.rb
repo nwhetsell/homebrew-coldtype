@@ -3,8 +3,8 @@ class Coldtype < Formula
 
   desc "Cross-platform display typography in Python"
   homepage "https://coldtype.xyz"
-  url "https://files.pythonhosted.org/packages/3a/5b/ee94e67d6d70790207a588e00936344c82ed532abff7ee53de37b21e7a26/coldtype-0.12.2.tar.gz"
-  sha256 "18dda768a2f0f44b5bd478d49f48d31fd61e36b97e109d8b27dcaf58969e873b"
+  url "https://files.pythonhosted.org/packages/ab/72/40ef7e83b394537624dceb2366b0f5005b27f7d3f7256ab6d5219e5d24c3/coldtype-0.13.3.tar.gz"
+  sha256 "61252646beadfbab6102fb1be56055dae69d9459349b4853f0cc4647537e6098"
   license "Apache-2.0"
 
   bottle do
@@ -23,7 +23,7 @@ class Coldtype < Formula
   depends_on "portaudio"
   depends_on "python-packaging"
   depends_on "python-setuptools"
-  depends_on "python@3.13"
+  depends_on "python@3.14"
 
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"
@@ -34,8 +34,8 @@ class Coldtype < Formula
   end
 
   resource "b3denv" do
-    url "https://files.pythonhosted.org/packages/26/a0/6aee69b364896ceb037d7d2cd2e147ba91020de66cdd0860bcb6e88b96b6/b3denv-0.0.20.tar.gz"
-    sha256 "724bd2ac6677e05e43a5a1914d3d7cb2fb4deff338a4888ba15a9ab1c1f89450"
+    url "https://files.pythonhosted.org/packages/13/39/de9c7467ce61573a87b0981caa55ea93aa0d9050382d1be5705090e4c0c8/b3denv-0.0.22.tar.gz"
+    sha256 "bd5e40150a92526ee2d8e3080bfc8aab089c9ffda05c0fd4e65c0fc010bebd4b"
   end
 
   resource "blackrenderer" do
@@ -44,18 +44,23 @@ class Coldtype < Formula
   end
 
   resource "booleanoperations" do
-    url "https://files.pythonhosted.org/packages/57/d9/9eae7bc4ba3a38ab7426522fb08e12df54aec27595d7bcd1bc0670aec873/booleanOperations-0.9.0.zip"
-    sha256 "8cfa821c32ad374fa120d6b2e0b444ebeac57c91e6631528645fa19ac2a281b8"
+    url "https://files.pythonhosted.org/packages/b4/6e/63c0dba783d3811cdfe675883cafa4dec03fdd9d77b5743c58da01890dfe/booleanoperations-0.10.0.tar.gz"
+    sha256 "6d719f560d2a1dd676c812b844ecceb693c96791c76579089ab7d0f5db5cedbe"
   end
 
   resource "brotli" do
-    url "https://files.pythonhosted.org/packages/2f/c2/f9e977608bdf958650638c3f1e28f85a1b075f075ebbe77db8555463787b/Brotli-1.1.0.tar.gz"
-    sha256 "81de08ac11bcb85841e440c13611c00b67d3bf82698314928d0b676362546724"
+    url "https://files.pythonhosted.org/packages/f7/16/c92ca344d646e71a43b8bb353f0a6490d7f6e06210f8554c8f874e454285/brotli-1.2.0.tar.gz"
+    sha256 "e310f77e41941c13340a95976fe66a8a95b01e783d430eeaf7a2f87e0a57dd0a"
   end
 
   resource "charset-normalizer" do
-    url "https://files.pythonhosted.org/packages/e4/33/89c2ced2b67d1c2a61c19c6751aa8902d46ce3dacb23600a283619f5a12d/charset_normalizer-3.4.2.tar.gz"
-    sha256 "5baececa9ecba31eff645232d59845c07aa030f0c81ee70184a90d35099a0e63"
+    url "https://files.pythonhosted.org/packages/e7/a1/67fe25fac3c7642725500a3f6cfe5821ad557c3abb11c9d20d12c7008d3e/charset_normalizer-3.4.7.tar.gz"
+    sha256 "ae89db9e5f98a11a4bf50407d4363e7b09b31e55bc117b4f7d80aab97ba009e5"
+  end
+
+  resource "coldtype-core" do
+    url "https://files.pythonhosted.org/packages/5d/47/65d1b249b3442b76be0800347f98b68d06dbe15a591e2c3ae0e4c920cd96/coldtype_core-0.13.3.tar.gz"
+    sha256 "90ef207d8e08bfddb8b3d9e3701970fc3c212bfcd9602e954d509ae8c32e349d"
   end
 
   resource "coldtype-fontgoggles" do
@@ -74,8 +79,8 @@ class Coldtype < Formula
   end
 
   resource "fontmath" do
-    url "https://files.pythonhosted.org/packages/0d/ee/c23438eb01ee4b43beb79c148088589661a3eb1c6549ec82baebea059c99/fontmath-0.9.4.zip"
-    sha256 "1fd9190c9d784e1305c3c49771b91d910f246a4b7c44ede219c99a07ed7aeda4"
+    url "https://files.pythonhosted.org/packages/69/a5/9abc6de47d7fe4bb7ec7bd3bf67aceb7fcdf7164083d7dfb1e1beb5b0f39/fontmath-0.10.0.tar.gz"
+    sha256 "7b0b39336d83d7fc03fb9dc3c662ef7d26b2c15355a34c643d1cfbd03f89fb74"
   end
 
   resource "fontpens" do
@@ -84,8 +89,8 @@ class Coldtype < Formula
   end
 
   resource "fonttools" do
-    url "https://files.pythonhosted.org/packages/8a/27/ec3c723bfdf86f34c5c82bf6305df3e0f0d8ea798d2d3a7cb0c0a866d286/fonttools-4.59.0.tar.gz"
-    sha256 "be392ec3529e2f57faa28709d60723a763904f71a2b63aabe14fee6648fe3b14"
+    url "https://files.pythonhosted.org/packages/9a/08/7012b00a9a5874311b639c3920270c36ee0c445b69d9989a85e5c92ebcb0/fonttools-4.62.1.tar.gz"
+    sha256 "e54c75fd6041f1122476776880f7c3c3295ffa31962dc6ebe2543c00dca58b5d"
   end
 
   resource "fs" do
@@ -94,18 +99,18 @@ class Coldtype < Formula
   end
 
   resource "glfw" do
-    url "https://files.pythonhosted.org/packages/38/97/a2d667c98b8474f6b8294042488c1bd488681fb3cb4c3b9cdac1a9114287/glfw-2.9.0.tar.gz"
-    sha256 "077111a150ff09bc302c5e4ae265a5eb6aeaff0c8b01f727f7fb34e3764bb8e2"
+    url "https://files.pythonhosted.org/packages/96/72/642d4f12f61816ac96777f7360d413e3977a7dd08237d196f02da681b186/glfw-2.10.0.tar.gz"
+    sha256 "801e55d8581b34df9aa2cfea43feb06ff617576e2a8cc5dac23ee75b26d10abe"
   end
 
   resource "idna" do
-    url "https://files.pythonhosted.org/packages/f1/70/7703c29685631f5a7590aa73f1f1d3fa9a380e654b86af429e0934a32f7d/idna-3.10.tar.gz"
-    sha256 "12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9"
+    url "https://files.pythonhosted.org/packages/6f/6d/0703ccc57f3a7233505399edb88de3cbd678da106337b9fcde432b65ed60/idna-3.11.tar.gz"
+    sha256 "795dafcc9c04ed0c1fb032c2aa73654d8e8c5023a7df64a53f39190ada629902"
   end
 
   resource "lxml" do
-    url "https://files.pythonhosted.org/packages/c5/ed/60eb6fa2923602fba988d9ca7c5cdbd7cf25faa795162ed538b527a35411/lxml-6.0.0.tar.gz"
-    sha256 "032e65120339d44cdc3efc326c9f660f5f7205f3a535c1fdbf898b29ea01fb72"
+    url "https://files.pythonhosted.org/packages/43/42/149c7747977db9d68faee960c1a3391eb25e94d4bb677f8e2df8328e4098/lxml-6.0.3.tar.gz"
+    sha256 "a1664c5139755df44cab3834f4400b331b02205d62d3fdcb1554f63439bf3372"
   end
 
   resource "mido" do
@@ -129,23 +134,18 @@ class Coldtype < Formula
   end
 
   resource "pybind11" do
-    url "https://files.pythonhosted.org/packages/ef/83/698d120e257a116f2472c710932023ad779409adf2734d2e940f34eea2c5/pybind11-3.0.0.tar.gz"
-    sha256 "c3f07bce3ada51c3e4b76badfa85df11688d12c46111f9d242bc5c9415af7862"
+    url "https://files.pythonhosted.org/packages/41/50/b83d65efc1914681f5aded4ce37c703408a9bb74829f27f041560ca52ffb/pybind11-3.0.3.tar.gz"
+    sha256 "00471cdb816882c484708bc5dde80815c8c11cea540ab2cc6410f5ddea434755"
   end
 
   resource "pyclipper" do
-    url "https://files.pythonhosted.org/packages/4a/b2/550fe500e49c464d73fabcb8cb04d47e4885d6ca4cfc1f5b0a125a95b19a/pyclipper-1.3.0.post6.tar.gz"
-    sha256 "42bff0102fa7a7f2abdd795a2594654d62b786d0c6cd67b72d469114fdeb608c"
-  end
-
-  resource "pycparser" do
-    url "https://files.pythonhosted.org/packages/1d/b2/31537cf4b1ca988837256c910a668b553fceb8f069bedc4b1c826024b52c/pycparser-2.22.tar.gz"
-    sha256 "491c8be9c040f5390f5bf44a5b07752bd07f56edf992381b05c701439eec10f6"
+    url "https://files.pythonhosted.org/packages/f6/21/3c06205bb407e1f79b73b7b4dfb3950bd9537c4f625a68ab5cc41177f5bc/pyclipper-1.4.0.tar.gz"
+    sha256 "9882bd889f27da78add4dd6f881d25697efc740bf840274e749988d25496c8e1"
   end
 
   resource "pyopengl" do
-    url "https://files.pythonhosted.org/packages/c0/42/71080db298df3ddb7e3090bfea8fd7c300894d8b10954c22f8719bd434eb/pyopengl-3.1.9.tar.gz"
-    sha256 "28ebd82c5f4491a418aeca9672dffb3adbe7d33b39eada4548a5b4e8c03f60c8"
+    url "https://files.pythonhosted.org/packages/6f/16/912b7225d56284859cd9a672827f18be43f8012f8b7b932bc4bd959a298e/pyopengl-3.1.10.tar.gz"
+    sha256 "c4a02d6866b54eb119c8e9b3fb04fa835a95ab802dd96607ab4cdb0012df8335"
   end
 
   resource "python-bidi" do
@@ -154,8 +154,13 @@ class Coldtype < Formula
   end
 
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/e1/0a/929373653770d8a0d7ea76c37de6e41f11eb07559b103b1c02cafb3f7cf8/requests-2.32.4.tar.gz"
-    sha256 "27d0316682c8a29834d3264820024b62a36942083d52caf2f14c0591336d3422"
+    url "https://files.pythonhosted.org/packages/5f/a4/98b9c7c6428a668bf7e42ebb7c79d576a1c3c1e3ae2d47e674b468388871/requests-2.33.1.tar.gz"
+    sha256 "18817f8c57c6263968bc123d237e3b8b08ac046f5456bd1e307ee8f4250d3517"
+  end
+
+  resource "show-in-file-manager" do
+    url "https://files.pythonhosted.org/packages/86/5e/1092f0054bd939d7ea471b06e2ab7895ebb5d6f7a7c2e736d0d1ce079582/show_in_file_manager-1.1.6.tar.gz"
+    sha256 "559b596e3e563800cf69d734cd236824279a9d820d1d841640c5f13e0058f9b6"
   end
 
   resource "six" do
@@ -164,8 +169,8 @@ class Coldtype < Formula
   end
 
   resource "skia-pathops" do
-    url "https://files.pythonhosted.org/packages/e5/85/4c6ce1f1f3e8d3888165f2830adcf340922416c155647b12ebac2dcc423e/skia_pathops-0.8.0.post2.zip"
-    sha256 "9e252cdeb6c4d162e82986d31dbd89c675d1677cb8019c2e13e6295d4a557269"
+    url "https://files.pythonhosted.org/packages/4a/f6/ab37d6fa21f25965d4ad059745c76f13ddfb92a2c06a842a42ad77961c24/skia_pathops-0.9.2.tar.gz"
+    sha256 "4b6d8459f6f4a69282cb26fca0c2bb0b321cc58a9bf9cc6579a52a391edc0319"
   end
 
   resource "soundfile" do
@@ -173,9 +178,14 @@ class Coldtype < Formula
     sha256 "b2c68dab1e30297317080a5b43df57e302584c49e2942defdde0acccc53f0e5b"
   end
 
+  resource "tqdm" do
+    url "https://files.pythonhosted.org/packages/09/a9/6ba95a270c6f1fbcd8dac228323f2777d886cb206987444e4bce66338dd4/tqdm-4.67.3.tar.gz"
+    sha256 "7d825f03f89244ef73f1d4ce193cb1774a8179fd96f31d7e1dcde62092b960bb"
+  end
+
   resource "ufo2ft" do
-    url "https://files.pythonhosted.org/packages/3c/2b/2191f6c828e714dd8f01b3ec5a2d45433256956501aa16131b48d4d19430/ufo2ft-3.6.0.tar.gz"
-    sha256 "84aa938c3f1c4e0cb11d99daa233c04f9258d75a24bcb88d3a77a6a142e7a66c"
+    url "https://files.pythonhosted.org/packages/e0/31/afc6225571a323ef7dc1fea2fd92e1a0c1ca2c02ff36d2f9dd5e659bb281/ufo2ft-3.7.1.tar.gz"
+    sha256 "3100f3058e01117560e99bdb064ce9dd636f17c28dfab02d2bfe31e05469ae3a"
   end
 
   resource "uharfbuzz" do
@@ -184,27 +194,27 @@ class Coldtype < Formula
   end
 
   resource "unicodedata2" do
-    url "https://files.pythonhosted.org/packages/8c/c6/f1aa23ed42259789c1c9bdeac219bfe72cc3046c3fc39ad3155705f81d9b/unicodedata2-16.0.0.tar.gz"
-    sha256 "05488d6592b59cd78b61ec37d38725416b2df62efafa6a0d63a631b27aa474fc"
+    url "https://files.pythonhosted.org/packages/44/cb/520721a715da85530e21c71953b9b9a85a44e0d80d3b34bf9303c422d208/unicodedata2-17.0.1.tar.gz"
+    sha256 "d79943d153f5f6bfbe3f55a5ec611985184bda37fcedb3ecc75322d82ae6ad3b"
   end
 
   resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/15/22/9ee70a2574a4f4599c47dd506532914ce044817c7752a79b6a51286319bc/urllib3-2.5.0.tar.gz"
-    sha256 "3fc47733c7e419d4bc3f6b3dc2b4f890bb743906a30d56ba4a5bfa4bbff92760"
+    url "https://files.pythonhosted.org/packages/c7/24/5f1b3bdffd70275f6661c76461e25f024d5a38a46f04aaca912426a2b1d3/urllib3-2.6.3.tar.gz"
+    sha256 "1b62b6884944a57dbe321509ab94fd4d3b307075e0c2eae991ac71ee15ad38ed"
   end
 
   resource "xattr" do
-    url "https://files.pythonhosted.org/packages/50/65/14438ae55acf7f8fc396ee8340d740a3e1d6ef382bf25bf24156cfb83563/xattr-1.2.0.tar.gz"
-    sha256 "a64c8e21eff1be143accf80fd3b8fde3e28a478c37da298742af647ac3e5e0a7"
+    url "https://files.pythonhosted.org/packages/08/d5/25f7b19af3a2cb4000cac4f9e5525a40bec79f4f5d0ac9b517c0544586a0/xattr-1.3.0.tar.gz"
+    sha256 "30439fabd7de0787b27e9a6e1d569c5959854cb322f64ce7380fedbfa5035036"
   end
 
   resource "zopfli" do
-    url "https://files.pythonhosted.org/packages/5e/7c/a8f6696e694709e2abcbccd27d05ef761e9b6efae217e11d977471555b62/zopfli-0.2.3.post1.tar.gz"
-    sha256 "96484dc0f48be1c5d7ae9f38ed1ce41e3675fd506b27c11a6607f14b49101e99"
+    url "https://files.pythonhosted.org/packages/0a/4d/a8cc1768b2eda3c0c7470bf8059dcb94ef96d45dd91fc6edd29430d44072/zopfli-0.4.1.tar.gz"
+    sha256 "07a5cdc5d1aaa6c288c5d9f5a5383042ba743641abf8e2fd898dcad622d8a38e"
   end
 
   def python3
-    which("python3.13")
+    which("python3.14")
   end
 
   def install
@@ -218,6 +228,8 @@ class Coldtype < Formula
     (prefix/Language::Python.site_packages(python3)/"homebrew-coldtype.pth").write <<~EOS
       import site; site.addsitedir('#{venv.site_packages}')
     EOS
+
+    bin.install_symlink libexec/"bin/coldtype" => "coldtype"
   end
 
   test do
@@ -226,7 +238,7 @@ class Coldtype < Formula
                            "--output-folder", testpath/"renders",
                            "--no-viewer", "True",
                            "demo"
-    assert_path_exists testpath/"demo.mp4"
+    assert_path_exists testpath/"renders/demo_0059.png"
 
     system python3, "-c", "import coldtype"
   end
