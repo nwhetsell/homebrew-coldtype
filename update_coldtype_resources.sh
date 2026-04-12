@@ -20,4 +20,4 @@ xattr,\
 zopfli\
 "
 
-brew update-python-resources --extra-packages "${extra_packages}" --exclude-packages certifi,cffi,numpy,packaging,setuptools coldtype
+brew update-python-resources --extra-packages "${extra_packages}" --exclude-packages certifi,cffi,cffsubr,numpy,packaging,setuptools,skia-python coldtype
